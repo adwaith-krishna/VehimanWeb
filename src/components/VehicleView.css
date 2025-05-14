@@ -1,0 +1,196 @@
+/* src/styles/VehicleView.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vehicle-view-header,
+.vehicle-view-footer {
+  width: 100%;
+  background-color: #6cbbb5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.vehicle-view-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Main page content */
+.vehicle-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+  height: 100vh;           /* Take full viewport height */
+  padding: 20px;
+}
+
+
+/* Vehicle content card */
+.vehicle-view-header {
+  background-color: rgb(108, 189, 181);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.vehicle-view-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.back-button:hover {
+  color: #f0f0f0;
+}
+
+.vehicle-title h2,
+.vehicle-title p {
+  margin: 0;
+  text-align: left;
+}
+
+
+/* Vehicle info */
+.vehicle-info p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Reservation section */
+.reservations-section {
+  margin-top: 30px;
+}
+
+.reservations-section h3 {
+  margin-bottom: 10px;
+}
+
+.reservations-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reservations-section li {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+/* Button section */
+.vehicle-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px; /* Space above the buttons */
+}
+
+.vehicle-buttons button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 48%; /* To make them evenly spaced */
+  background-color: #539d96;
+}
+
+.vehicle-buttons button:not(:last-child) {
+  margin-right: 10px; /* Add space between the buttons */
+}
+
+.vehicle-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.vehicle-buttons button:hover:not(:disabled) {
+  background-color: #539d96;
+}
+
+/* Make page take full height and push footer to bottom */
+.vehicle-view-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.vehicle-view-container {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Ensure footer spans full width */
+.vehicle-view-footer {
+  width: 100%;
+  background-color: #6cbbb5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+.vehicle-card {
+  background-color: #f3f3f3;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0; /* Added margin for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+}
+
+
+.vehicle-card-title {
+  margin: 0 0 8px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.vehicle-card-number {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.vehicle-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vehicle-info p {
+  margin: 4px 0;
+  color: #444;
+}
+

@@ -1,0 +1,66 @@
+/* src/components/Login.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6CBDB5, #C8D6BF);
+  padding: 1rem;
+  overflow-y: hidden; /* Prevents overflow */
+  overflow-x: hidden;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #6CBDB5;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6CBDB5;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #569f8f;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: black; /* changed to black */
+}

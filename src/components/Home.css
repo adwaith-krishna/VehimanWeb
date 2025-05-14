@@ -1,0 +1,149 @@
+/* Reset */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/* Container layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.home-header {
+  background-color: rgb(108, 189, 181);
+  width: 100%;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: white;
+  color: rgb(108, 189, 181);
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: rgb(232, 247, 243);
+}
+
+/* Main Content */
+.home-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Tiles Container */
+.tiles-container {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Tile Buttons */
+.tile {
+  background-color: rgb(108, 189, 181);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 24px 32px;
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background-color 0.3s;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  background-color: rgb(92, 172, 165);
+}
+
+.tile-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Footer */
+.home-footer {
+  background-color: rgb(108, 189, 181);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.85rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+/* Footer Top Row */
+.footer-top {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Heart Styling */
+.heart {
+  color: red;
+}
+/* Footer Bottom Text */
+.footer-bottom {
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .home-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .logout-button {
+    margin-left: 0;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
